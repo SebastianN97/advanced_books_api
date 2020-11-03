@@ -1,7 +1,8 @@
 const path = require("path");
+const pg = require("pg");
 
 module.exports = {
-  config: path.resolve("./database/config", "config.json"),
+  config: path.resolve("./database/config", "config.js"),
   "models-path": path.resolve("./app/models"),
   "seeders-path": path.resolve("./database/seeders"),
   "migrations-path": path.resolve("./database/migrations"),
